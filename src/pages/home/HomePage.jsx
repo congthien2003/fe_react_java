@@ -54,7 +54,9 @@ const HomePage = () => {
 	};
 	const handleModalCancel = () => {
 		setPaymentSuccess(false); // Close the modal
-		window.location.reload(); // Redirect to home page
+		const token = window.sessionStorage.getItem("token");
+		window.location.href = "https://flonestorekeeb.vercel.app/";
+		window.sessionStorage.setItem("token", token);
 	};
 	return (
 		<div>
