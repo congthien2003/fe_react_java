@@ -54,7 +54,7 @@ const HomePage = () => {
 	};
 	const handleModalCancel = () => {
 		setPaymentSuccess(false); // Close the modal
-		window.location.href = "http://localhost:5173/"; // Redirect to home page
+		window.location.reload(); // Redirect to home page
 	};
 	return (
 		<div>
