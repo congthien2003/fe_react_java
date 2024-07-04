@@ -51,8 +51,8 @@ const ProductComponent = ({ product }) => {
 					</div>
 				</div>
 				<div className="product--description">
-					<p className="product--type">KEYCAP</p>
-					<p className="product--name"> Name: {product.name} </p>
+					<p className="product--type">{product.category.name}</p>
+					<p className="product--name">{product.name} </p>
 					<p className="product--price">
 						{/* <span className="price-sale">{product.priceSale}</span> */}
 
